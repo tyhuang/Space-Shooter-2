@@ -81,7 +81,15 @@ public class GameController_Script : MonoBehaviour
 		//Excute when keyboard button R pressed
 		if(Input.GetKey("r"))
 		{
-			Application.LoadLevel(0);		//Load Level 0 (same Level) to make a restart
+			//Application.LoadLevel(0);		//Load Level 0 (same Level) to make a restart
+			Application.LoadLevel("Scene_01");		//TH Changed because 0 is now Main Menu
+		}
+
+		//Excute when keyboard button Esc pressed
+		if(Input.GetKey("escape"))
+		{
+			//Application.LoadLevel(0);		//Load Level 0 (same Level) to make a restart
+			Application.LoadLevel("Scene_Main_Menu");		//TH Changed because 0 is now Main Menu
 		}
 	}
 
